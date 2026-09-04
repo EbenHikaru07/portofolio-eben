@@ -1,0 +1,214 @@
+/* =========================================
+   EDUCATION TWO-COLUMN LAYOUT
+========================================= */
+
+.education-grid {
+  display: grid;
+  /* grid-template-columns: repeat(2, 1fr); */
+  gap: 60px;
+  margin-top: 60px;
+}
+
+.education-column {
+  min-width: 0;
+}
+
+.education-column-header {
+  margin-bottom: 35px;
+}
+
+.education-label {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  opacity: 0.6;
+}
+
+.education-column-header h3 {
+  font-size: 28px;
+  margin: 0;
+}
+
+.education-column-header h3 span {
+  color: #2c71d6;
+}
+
+/* =========================================
+   ACADEMIC HIGHLIGHTS
+========================================= */
+
+.timeline-activities {
+  margin-top: 25px;
+  padding-top: 22px;
+
+  border-top: 1px solid var(--border);
+}
+
+/* Heading */
+
+.activities-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+
+  margin-bottom: 20px;
+}
+
+.activities-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 30px;
+  height: 30px;
+
+  flex-shrink: 0;
+
+  border: 1px solid rgba(44, 113, 214, 0.3);
+  border-radius: 8px;
+
+  background: rgba(44, 113, 214, 0.08);
+
+  color: var(--primary-light);
+
+  font-size: 14px;
+}
+
+.activities-label {
+  display: block;
+  color: var(--primary-light);
+
+  font-size: 12px;
+  font-weight: 600;
+
+  letter-spacing: 1.8px;
+}
+
+.activities-heading h4 {
+  margin: 0;
+
+  color: var(--text);
+
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* List */
+
+.timeline-activities ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+/* List Item */
+
+.timeline-activities li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+
+  margin: 0;
+  padding: 8px 0px;
+
+  border: 1px solid transparent;
+  border-radius: 10px;
+
+  color: var(--muted);
+
+  font-size: 14px;
+  line-height: 1.65;
+
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.timeline-activities li:hover {
+  background: rgba(44, 113, 214, 0.05);
+  border-color: rgba(44, 113, 214, 0.15);
+
+}
+
+/* Number */
+
+.activity-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 28px;
+  height: 28px;
+
+  flex-shrink: 0;
+
+  border-radius: 7px;
+
+  background: rgba(44, 113, 214, 0.1);
+
+  color: var(--primary-light);
+
+  font-size: 10px;
+  font-weight: 600;
+
+  letter-spacing: 0.5px;
+}
+
+/* Text */
+
+.activity-text {
+  padding-top: 3px;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+  .timeline-activities {
+    margin-top: 20px;
+    padding-top: 18px;
+  }
+
+  .activities-heading {
+    margin-bottom: 15px;
+  }
+
+  .activities-heading h4 {
+    font-size: 15px;
+  }
+
+  .timeline-activities li {
+    gap: 10px;
+    padding: 10px 11px;
+    font-size: 13px;
+  }
+
+  .activity-number {
+    width: 25px;
+    height: 25px;
+    font-size: 9px;
+  }
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+  .education-grid {
+    grid-template-columns: 1fr;
+    gap: 70px;
+  }
+
+  .education-column-header h3 {
+    font-size: 24px;
+  }
+}

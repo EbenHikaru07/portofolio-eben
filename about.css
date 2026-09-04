@@ -1,0 +1,346 @@
+/* =========================================
+   ABOUT
+========================================= */
+
+.about {
+  background: var(--bg-soft);
+}
+
+
+/* =========================================
+   ABOUT INTRO
+========================================= */
+
+.about-intro {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 70px;
+
+  margin-top: 55px;
+  margin-bottom: 80px;
+
+  align-items: start;
+}
+
+
+.about-lead {
+  max-width: 600px;
+
+  margin: 0;
+
+  color: var(--white);
+
+  font-size: 25px;
+
+  line-height: 1.45;
+
+  font-weight: 500;
+}
+
+
+.about-description {
+  max-width: 600px;
+
+  margin: 0;
+
+  color: var(--muted);
+
+  font-size: 15px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================
+   SDLC SECTION
+========================================= */
+
+.sdlc-section {
+  border-top: 1px solid var(--border);
+
+  padding-top: 40px;
+
+  margin-bottom: 70px;
+}
+
+
+/* =========================================
+   SDLC HEADER
+========================================= */
+
+.sdlc-header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-end;
+
+  gap: 40px;
+
+  margin-bottom: 45px;
+}
+
+
+.sdlc-label {
+  margin: 0 0 10px;
+
+  color: var(--primary);
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  letter-spacing: 1.5px;
+
+  text-transform: uppercase;
+}
+
+
+.sdlc-header h3 {
+  margin: 0;
+
+  font-size: 27px;
+
+  font-weight: 500;
+}
+
+
+.sdlc-header h3 span {
+  color: var(--primary);
+}
+
+
+.sdlc-header > p {
+  max-width: 320px;
+
+  margin: 0;
+
+  color: var(--muted);
+
+  font-size: 13px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   SDLC FLOW
+========================================= */
+
+.sdlc-flow {
+  display: flex;
+
+  align-items: center;
+
+  width: 100%;
+}
+
+
+/* =========================================
+   SDLC STEP
+========================================= */
+
+.sdlc-step {
+  flex: 0 0 auto;
+
+  text-align: center;
+}
+
+
+.sdlc-step span {
+  display: grid;
+
+  place-items: center;
+
+  width: 42px;
+
+  height: 42px;
+
+  margin: 0 auto 12px;
+
+  border: 1px solid var(--border);
+
+  border-radius: 50%;
+
+  color: var(--primary);
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  background: var(--bg);
+}
+
+
+.sdlc-step h4 {
+  margin: 0;
+
+  font-size: 12px;
+
+  font-weight: 500;
+
+  white-space: nowrap;
+
+  color: var(--text);
+}
+
+
+/* =========================================
+   SDLC LINE
+========================================= */
+
+.sdlc-line {
+  flex: 1;
+
+  height: 1px;
+
+  min-width: 25px;
+
+  margin: 0 12px 25px;
+
+  background: var(--border);
+}
+
+
+/* =========================================
+   ABOUT STATS
+========================================= */
+
+.about-stats {
+  display: flex;
+
+  gap: 0;
+
+  border-top: 1px solid var(--border);
+
+  border-bottom: 1px solid var(--border);
+}
+
+
+.stat {
+  flex: 1;
+
+  display: flex;
+
+  flex-direction: column;
+
+  padding: 25px 30px;
+
+  border-right: 1px solid var(--border);
+}
+
+
+.stat:first-child {
+  padding-left: 0;
+}
+
+
+.stat:last-child {
+  border-right: none;
+}
+
+
+.stat strong {
+  color: var(--white);
+
+  font-size: 30px;
+
+  line-height: 1;
+
+  margin-bottom: 8px;
+}
+
+
+.stat span {
+  color: var(--muted);
+
+  font-size: 12px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+  .about-intro {
+    grid-template-columns: 1fr;
+
+    gap: 25px;
+
+    margin-bottom: 65px;
+  }
+
+
+  .sdlc-header {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 15px;
+  }
+
+
+  .sdlc-flow {
+    overflow-x: auto;
+
+    padding-bottom: 15px;
+  }
+
+
+  .sdlc-step {
+    min-width: 110px;
+  }
+
+
+  .sdlc-line {
+    min-width: 30px;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .about-lead {
+    font-size: 22px;
+  }
+
+
+  .sdlc-header h3 {
+    font-size: 23px;
+  }
+
+
+  .about-stats {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+
+  .stat {
+    padding: 20px 15px;
+
+    border-right: 1px solid var(--border);
+  }
+
+
+  .stat:first-child {
+    padding-left: 15px;
+  }
+
+
+  .stat strong {
+    font-size: 24px;
+  }
+
+
+  .stat span {
+    font-size: 10px;
+  }
+
+}
