@@ -574,7 +574,7 @@ const experiences = [
   },
   {
     date: "Aug 2024 - Jan 2025",
-    position: "Engineering Intern",
+    position: "Programmer Intern",
     company: "PT. SIIX Electronics Indonesia",
     description:
       "Developed and supported web, desktop, and IoT applications for engineering and production needs.",
