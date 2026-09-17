@@ -159,6 +159,7 @@ const skillCategories = [
       "System Design",
       "Troubleshooting",
       "Process Improvement",
+      "System Integration",
     ],
   },
 
@@ -557,9 +558,9 @@ const experiences = [
     description:
       "Developed and maintained internal web applications and IoT systems to support production operations and process improvements.",
     responsibilities: [
-      "Developed web applications and IoT-based solutions to support production operations and improve existing processes.",
+      "Designed and developed 5 software and IoT projects, including web applications and IoT-based solutions, to support production operations and improve existing processes.",
       "Worked with engineering teams and mentors to understand requirements, solve problems, and develop solutions.",
-      "Tested applications functionality and fixed issues to ensure features worked properly.",
+      "Tested application functionality, troubleshot issues, and implemented fixes to ensure system reliability.",
       "Contributed to Improving existing processes by reducing manual work through software and IoT solutions.",
       "Developed an event management system and supported internal event for company activities for 3,000+ participants.",
     ],
@@ -579,9 +580,9 @@ const experiences = [
     description:
       "Developed and supported web, desktop, and IoT applications for engineering and production needs.",
     responsibilities: [
-      "Developed and supported web, desktop, and IoT applications for engineering and production activities.",
+      "Developed and supported web, desktop, and IoT applications, including a Text-to-Speech feature for Andon systems, to support engineering and production activities.",
       "Assisted with application development, requirement gathering, testing, and troubleshooting.",
-      "Worked with mentor to understand requirements and develop solutions based on project needs.",
+      "Worked with mentors to understand requirements and develop solutions based on project needs.",
     ],
     tags: [
       ".NET",
